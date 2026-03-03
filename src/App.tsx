@@ -1,8 +1,7 @@
 import './App.css'
-import { BlackTeam } from './BlackTeam.tsx';
+import { Team } from './Team.tsx';
 import { Board } from './Board.tsx'
 import { Checker } from './Checker.tsx';
-import { WhiteTeam } from './WhiteTeam.tsx';
 
 function App() {
 
@@ -12,8 +11,8 @@ function App() {
       <Board boardSize={boardSize} />
       <Checker boardSize={boardSize} isBlackTeam={true} isKing={true} />
       <Checker boardSize={boardSize} isBlackTeam={false} isKing={true} />
-      <WhiteTeam boardSize={boardSize} />
-      <BlackTeam boardSize={boardSize} />
+      <Team boardSize={boardSize} isBlackTeam={true} />
+      <Team boardSize={boardSize} isBlackTeam={false} />
     </>
   )
 }
